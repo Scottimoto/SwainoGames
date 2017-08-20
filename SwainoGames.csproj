@@ -3,6 +3,9 @@
     <TargetFramework>netcoreapp2.0</TargetFramework>
     <TypeScriptCompileBlocked>true</TypeScriptCompileBlocked>
     <IsPackable>false</IsPackable>
+    <RootNamespace>SwainoGamesProject</RootNamespace>
+    <AssemblyName>SwainoGames</AssemblyName>
+    <TypeScriptToolsVersion>2.3</TypeScriptToolsVersion>
   </PropertyGroup>
   <ItemGroup>
   <!-- New Meta Package has SpaServices in It -->
