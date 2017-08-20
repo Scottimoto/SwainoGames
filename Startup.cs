@@ -48,8 +48,10 @@ namespace AspCoreServer
       var connectionStringBuilder = new Microsoft.Data.Sqlite.SqliteConnectionStringBuilder { DataSource = "spa.db" };
       var connectionString = connectionStringBuilder.ToString();
 
-      services.AddDbContext<SpaDbContext>(options =>
-          options.UseSqlite(connectionString));
+      //System.Data.Common.DbConnection connectionInfo = new System.Data.Common.DbConnection();
+      //SCOTT pass options builder in?
+      //Need to read connection string from json settings file!
+      services.AddDbContext<SwainoGamesDatabaseDbContext>();
 
       // Register the Swagger generator, defining one or more Swagger documents
       services.AddSwaggerGen(c =>
@@ -59,7 +61,7 @@ namespace AspCoreServer
     }
 
     // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-    public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory, SpaDbContext context)
+    public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory, SwainoGamesDatabaseDbContext context)
     {
       loggerFactory.AddConsole(Configuration.GetSection("Logging"));
       loggerFactory.AddDebug();

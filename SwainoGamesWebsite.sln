@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26730.8
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SwainoGames", "SwainoGames.csproj", "{D32F9FCA-C76F-4C1C-BA4F-9766E0B70E15}"
 EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "SwainoGamesDatabase", "SwainoGamesDatabase\SwainoGamesDatabase.sqlproj", "{35CA649F-6C05-4898-B9E9-077C2E160379}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,12 @@ Global
 		{D32F9FCA-C76F-4C1C-BA4F-9766E0B70E15}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D32F9FCA-C76F-4C1C-BA4F-9766E0B70E15}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D32F9FCA-C76F-4C1C-BA4F-9766E0B70E15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35CA649F-6C05-4898-B9E9-077C2E160379}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35CA649F-6C05-4898-B9E9-077C2E160379}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35CA649F-6C05-4898-B9E9-077C2E160379}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{35CA649F-6C05-4898-B9E9-077C2E160379}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35CA649F-6C05-4898-B9E9-077C2E160379}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35CA649F-6C05-4898-B9E9-077C2E160379}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

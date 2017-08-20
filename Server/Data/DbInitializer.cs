@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
@@ -9,7 +9,7 @@ namespace AspCoreServer.Data
 {
     public static class DbInitializer
     {
-        public static void Initialize(SpaDbContext context)
+        public static void Initialize(SwainoGamesDatabaseDbContext context)
         {
             context.Database.EnsureCreated();
 

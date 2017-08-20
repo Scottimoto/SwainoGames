@@ -18,12 +18,16 @@
   <ItemGroup>
     <!-- Files not to show in IDE -->
     <None Remove="yarn.lock" />
+    <Compile Remove="SwainoGamesDatabase\**" />
+    <Content Remove="SwainoGamesDatabase\**" />
 	<Content Remove="wwwroot\dist\**" />
 	<None Remove="Client\dist\**" />
+	<None Remove="SwainoGamesDatabase\**" />
     <Content Remove="coverage\**" />
 
     <!-- Files not to publish (note that the 'dist' subfolders are re-added below) -->
     <Content Remove="Client\**" />
+    <EmbeddedResource Remove="SwainoGamesDatabase\**" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Client\tsconfig.browser.json" />

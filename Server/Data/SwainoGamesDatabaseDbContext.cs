@@ -1,11 +1,11 @@
-﻿using AspCoreServer.Models;
+using AspCoreServer.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace AspCoreServer.Data
 {
-    public class SpaDbContext : DbContext
+    public class SwainoGamesDatabaseDbContext : DbContext
     {
-        public SpaDbContext(DbContextOptions<SpaDbContext> options)
+        public SwainoGamesDatabaseDbContext(DbContextOptions<SwainoGamesDatabaseDbContext> options)
             : base(options)
         {
             Database.EnsureCreated();
